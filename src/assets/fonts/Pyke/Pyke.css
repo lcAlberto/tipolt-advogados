@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Pyke-Regular';
+    src: url('./PykeDisplay-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pyke-Medium';
+    src: url('./PykeDisplay-BoldItalic.otf') format('truetype');
+    font-weight: 3;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pyke-Black';
+    src: url('./PykeDisplay-Italic.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

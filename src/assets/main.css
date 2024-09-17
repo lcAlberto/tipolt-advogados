@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: "Poppins-Regular";
+    }
+
+    h1 {
+        font-size: 5rem;
+        font-family:'PlayfairDisplay-Regular' !important;
+    }
+
+    section {
+        position: relative;
+    }
+
+    .font-popins {
+        font-family: Poppins-Regular !important;
+    }
+    .font-roboto {
+        font-family: Roboto-Regular !important;
+    }
+    .font-pyke {
+        font-family: "Pyke Display" !important;
+    }
+    .font-montserrat {
+        font-family: Montserrat !important;
+    }
+
+    .font-playfair {
+        font-family: PlayfairDisplay-Regular !important;
+    }
+}
