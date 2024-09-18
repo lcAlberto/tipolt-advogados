@@ -36,7 +36,7 @@
         <div class="flex items-center justify-evenly gap-10 flex-wrap my-10">
 
           <div class="flex flex-col items-center">
-            <p class="text-lg w-11/12 lg:w-1/2">
+            <p class="text-lg w-11/12 lg:w-1/2 text-justify">
               No nosso escritório de advocacia, estamos comprometidos em fornecer soluções jurídicas eficazes e
               personalizadas para atender às suas necessidades. Atuamos nas áreas de <span class="italic">Direito Previdenciário, Trabalhista,
               Civil e Agro.</span>
@@ -54,7 +54,7 @@
                     <font-awesome-icon :icon="['fas', 'people-group']" size="2xl" />
                   </button>
                   <h5 class="card-title">Direito Civil</h5>
-                  <p class="leading-relaxed">
+                  <p class="leading-relaxed text-justify">
                     Resolvemos disputas contratuais, questões de herança e danos morais.
                     Soluções eficazes para questões contratuais, indenizações, e disputas familiares
                   </p>
@@ -70,7 +70,7 @@
                     <font-awesome-icon :icon="['fas', 'hammer']"  size="2xl"/>
                   </button>
                   <h5 class="card-title">Direito Trabalhista</h5>
-                  <p class="leading-relaxed">
+                  <p class="leading-relaxed text-justify">
                     Defendemos seus direitos trabalhistas, seja como empregador ou empregado, em casos de demissão, assédio
                     no trabalho e questões de horas extras
                   </p>
@@ -86,7 +86,7 @@
                     <font-awesome-icon :icon="['fas', 'wheat-awn']" size="2xl" />
                   </button>
                   <h5 class="card-title">Direito Agrário</h5>
-                  <p class="leading-relaxed">
+                  <p class="leading-relaxed text-justify">
                     Protegemos o patrimônio rural e auxiliamos em questões legais relacionadas à terra.
                     Assessoramos contratos agrários, regularização fundiária e questões ambientais
                   </p>
@@ -102,7 +102,7 @@
                     <font-awesome-icon :icon="['fas', 'people-roof']" size="2xl" />
                   </button>
                   <h5 class="card-title">Direito Previdenciario</h5>
-                  <p class="leading-relaxed">
+                  <p class="leading-relaxed text-justify">
                     Acompanhamento completo em processos de aposentadoria, auxílio-doença, benefícios por incapacidade e revisões desses benefícios do INSS
                   </p>
                 </div>

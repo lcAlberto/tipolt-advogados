@@ -1,8 +1,12 @@
 <template>
-  <button class="btn btn-accent rounded-full uppercase text-xl btn-lg">
+  <a
+    href="https://wa.me/5542999106812"
+    target="_blank"
+    class="btn btn-accent rounded-full uppercase text-xl btn-lg"
+  >
     <font-awesome-icon :icon="['fab', 'whatsapp']" size="2xl" />
     <span class="text-xs sm:text-sm md:text-md">{{ props.text }}</span>
-  </button>
+  </a>
 </template>
 <script
   setup
