@@ -11,7 +11,6 @@
         type="radio"
         :name="`my-accordion`"
         :value="`${index}`"
-        checked="checked"
       />
       <div class="collapse-title text-xl font-medium">
         {{ item.title }}
