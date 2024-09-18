@@ -16,11 +16,6 @@ import { ref, onMounted } from 'vue';
 import CarrousselItem from '@/components/carroussel/CarrousselItem.vue'
 
 const content:IContent[] = [
-  // {
-  //   id: 1,
-  //   title: 'Experiência e Conhecimento',
-  //   text: 'Nosso time é liderado por [Nome do Advogado], um profissional com vasta experiência e profundo conhecimento das leis brasileiras, especialmente nas áreas em que atuamos. Isso garante que você tenha o suporte de quem realmente entende do assunto.'
-  // },
   {
     id: 2,
     title: 'Transparência',
@@ -60,6 +55,7 @@ interface IContent {
 <style scoped>
 .carousel-container {
   width: 100%;
+  max-width: 90vw;
   overflow: hidden;
 }
 

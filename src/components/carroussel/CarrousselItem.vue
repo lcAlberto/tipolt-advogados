@@ -1,5 +1,5 @@
 <template>
-  <div class="card rounded-none carousel-item border border-primary flex-shrink-0 w-full">
+  <div class="card rounded-none carousel-item border border-x-0 border-primary flex-shrink-0 w-full">
     <div class="card-body">
       <h3 class="mx-auto card-title">
         {{ props.title }}

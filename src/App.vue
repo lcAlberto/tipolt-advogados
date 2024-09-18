@@ -7,12 +7,14 @@
       </main>
     </div>
     <Footer/>
+    <scrool-to-top-button/>
   </div>
 </template>
 
 <script setup lang="ts">
-import Navbar from '@/components/navbar.vue'
+import Navbar from '@/components/NavbarContent.vue'
 import Footer from '@/components/FooterComponent.vue'
+import ScroolToTopButton from '@/ScroolToTopButton.vue'
 </script>
 
 <style scoped>

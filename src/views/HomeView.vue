@@ -1,7 +1,10 @@
 <template>
   <div class="relative bg-base-100">
     <div class="bg-primary w-full absolute left-0"></div>
-    <section class="h-[80vh] flex flex-col items-center justify-evenly mx-auto">
+    <section
+      id="home"
+      class="lg:h-[80vh] flex flex-col items-center justify-evenly mx-auto px-5"
+    >
       <div class="flex flex-col items-center justify-center gap-0 w-10/12">
         <img
           src="@/assets/images/logo-white.png"
@@ -19,104 +22,106 @@
         <span class="text-2xl mt-5"> Compromisso com a Justiça e Excelência Jurídica</span>
         <span class="text-xl mb-5"> Aqui, sua tranquilidade é a nossa prioridade</span>
       </p>
-      <button class="btn btn-accent rounded-full uppercase text-xl btn-lg">
-        <font-awesome-icon :icon="['fab', 'whatsapp']" size="2xl" />
-        <span>Converse diretamente</span>
-      </button>
-      <small>Atendimento 100% online | Advogados altamente capacitados para te atender</small>
+      <whatsapp-button />
+      <small class="my-5">Atendimento 100% online | Advogados altamente capacitados para te atender</small>
     </section>
 
-<!--    -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
 
-    <section class="min-h-[80vh] bg-neutral">
-      <div class="w-10/12 flex flex-col items-center justify-evenly pt-10 mx-auto text-secondary-content">
+    <section
+      id="how-help"
+      class="md:min-h-[80vh] xl:min-h-[50vh] px-5 bg-neutral"
+    >
+      <div class="md:w-10/12 w-full flex flex-col items-center justify-evenly pt-10 mx-auto text-secondary-content">
         <h2 class="text-5xl">Como posso te ajudar?</h2>
         <div class="flex items-center justify-evenly gap-10 flex-wrap my-10">
 
           <div class="flex flex-col items-center">
-            <p class="text-lg w-1/2">
+            <p class="text-lg w-11/12 lg:w-1/2">
               No nosso escritório de advocacia, estamos comprometidos em fornecer soluções jurídicas eficazes e
               personalizadas para atender às suas necessidades. Atuamos nas áreas de <span class="italic">Direito Previdenciário, Trabalhista,
               Civil e Agro.</span>
             </p>
 
-            <div class="flex items-center justify-center gap-10 flex-wrap my-10">
-            <div class="card bg-base-100 text-base-content h-80 w-1/3 pb-10 shadow-2xl">
-              <div class="card-body flex flex-col justify-evenly items-center my-auto text-center">
-                <button
-                  type="button"
-                  class="badge badge-primary rounded-md py-10 px-5 cursor-default text-2xl my-5"
-                >
-                  <font-awesome-icon :icon="['fas', 'people-group']" size="2xl" />
-                </button>
-                <h5 class="card-title">Direito Civil</h5>
-                <p class="leading-relaxed">
-                  Resolvemos disputas contratuais, questões de herança e danos morais.
-                  Soluções eficazes para questões contratuais, indenizações, e disputas familiares
-                </p>
-              </div>
-            </div>
+            <div class="flex items-center justify-center gap-10 flex-wrap my-10 px-5 md:px-0">
 
-            <div class="card bg-base-100 text-base-content h-80 w-1/3 pb-10 shadow-2xl">
-              <div class="card-body flex flex-col justify-evenly items-center my-auto text-center">
-                <button
-                  type="button"
-                  class="badge badge-primary rounded-md py-10 px-5 cursor-default text-2xl my-5"
-                >
-                  <font-awesome-icon :icon="['fas', 'hammer']"  size="2xl"/>
-                </button>
-                <h5 class="card-title">Direito Trabalhista</h5>
-                <p class="leading-relaxed">
-                  Defendemos seus direitos trabalhistas, seja como empregador ou empregado, em casos de demissão, assédio
-                  no trabalho e questões de horas extras
-                </p>
+<!--              CARD1-->
+              <div class="card bg-base-100 text-base-content lg:h-96 xl:h-80 lg:w-1/3 md:pb-10 shadow-2xl">
+                <div class="card-body flex md:flex-col justify-evenly items-center my-auto text-center md:p-5 p-2">
+                  <button
+                    type="button"
+                    class="badge badge-primary rounded-md py-10 px-5 cursor-default text-2xl my-5"
+                  >
+                    <font-awesome-icon :icon="['fas', 'people-group']" size="2xl" />
+                  </button>
+                  <h5 class="card-title">Direito Civil</h5>
+                  <p class="leading-relaxed">
+                    Resolvemos disputas contratuais, questões de herança e danos morais.
+                    Soluções eficazes para questões contratuais, indenizações, e disputas familiares
+                  </p>
+                </div>
               </div>
-            </div>
-
-            <div class="card bg-base-100 text-base-content h-80 w-1/3 pb-10 shadow-2xl">
-              <div class="card-body flex flex-col justify-evenly items-center my-auto text-center">
-                <button
-                  type="button"
-                  class="badge badge-primary rounded-md py-10 px-5 cursor-default text-2xl my-5"
-                >
-                  <font-awesome-icon :icon="['fas', 'wheat-awn']" size="2xl" />
-                </button>
-                <h5 class="card-title">Direito Agrário</h5>
-                <p class="leading-relaxed">
-                  Protegemos o patrimônio rural e auxiliamos em questões legais relacionadas à terra.
-                  Assessoramos contratos agrários, regularização fundiária e questões ambientais
-                </p>
+              <!--              CARD2-->
+              <div class="card bg-base-100 text-base-content lg:h-96 xl:h-80 lg:w-1/3 md:pb-10 shadow-2xl">
+                <div class="card-body flex md:flex-col justify-evenly items-center my-auto text-center md:p-5 p-2">
+                  <button
+                    type="button"
+                    class="badge badge-primary rounded-md py-10 px-5 cursor-default text-2xl my-5"
+                  >
+                    <font-awesome-icon :icon="['fas', 'hammer']"  size="2xl"/>
+                  </button>
+                  <h5 class="card-title">Direito Trabalhista</h5>
+                  <p class="leading-relaxed">
+                    Defendemos seus direitos trabalhistas, seja como empregador ou empregado, em casos de demissão, assédio
+                    no trabalho e questões de horas extras
+                  </p>
+                </div>
               </div>
-            </div>
-
-            <div class="card bg-base-100 text-base-content h-80 w-1/3 pb-10 shadow-2xl">
-              <div class="card-body flex flex-col justify-evenly items-center my-auto text-center">
-                <button
-                  type="button"
-                  class="badge badge-primary rounded-md py-10 px-5 cursor-default text-2xl my-5"
-                >
-                  <font-awesome-icon :icon="['fas', 'people-roof']" size="2xl" />
-                </button>
-                <h5 class="card-title">Direito Previdenciario</h5>
-                <p class="leading-relaxed">
-                  Acompanhamento completo em processos de aposentadoria, auxílio-doença, benefícios por incapacidade e revisões desses benefícios do INSS
-                </p>
+              <!--              CARD3-->
+              <div class="card bg-base-100 text-base-content lg:h-96 xl:h-80 lg:w-1/3 md:pb-10 shadow-2xl">
+                <div class="card-body flex md:flex-col justify-evenly items-center my-auto text-center md:p-5 p-2">
+                  <button
+                    type="button"
+                    class="badge badge-primary rounded-md py-10 px-5 cursor-default text-2xl my-5"
+                  >
+                    <font-awesome-icon :icon="['fas', 'wheat-awn']" size="2xl" />
+                  </button>
+                  <h5 class="card-title">Direito Agrário</h5>
+                  <p class="leading-relaxed">
+                    Protegemos o patrimônio rural e auxiliamos em questões legais relacionadas à terra.
+                    Assessoramos contratos agrários, regularização fundiária e questões ambientais
+                  </p>
+                </div>
               </div>
-            </div>
+              <!--              CARD4-->
+              <div class="card bg-base-100 text-base-content lg:h-96 xl:h-80 lg:w-1/3 md:pb-10 shadow-2xl">
+                <div class="card-body flex md:flex-col justify-evenly items-center my-auto text-center md:p-5 p-2">
+                  <button
+                    type="button"
+                    class="badge badge-primary rounded-md py-10 px-5 cursor-default text-2xl my-5"
+                  >
+                    <font-awesome-icon :icon="['fas', 'people-roof']" size="2xl" />
+                  </button>
+                  <h5 class="card-title">Direito Previdenciario</h5>
+                  <p class="leading-relaxed">
+                    Acompanhamento completo em processos de aposentadoria, auxílio-doença, benefícios por incapacidade e revisões desses benefícios do INSS
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-<!--    -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
-
-    <section class="min-h-[80vh] bg-secondary">
-      <div class="w-10/12 flex flex-col items-center justify-evenly pt-10 mx-auto text-secondary-content">
+    <section
+      id="about"
+      class="md:min-h-[80vh] xl:min-h-[50vh] bg-secondary px-5"
+    >
+      <div class="w-full md:w-10/12 flex flex-col items-center justify-evenly pt-10 mx-auto text-secondary-content">
         <h2 class="text-5xl">Quem somos?</h2>
-        <div class="flex items-center justify-evenly gap-10 flex-wrap my-1">
+        <div class="flex items-center justify-evenly gap-10 flex-wrap mt-5">
 
-          <div class="w-1/2 text-lg">
+          <div class="w-full lg:w-1/2 text-lg">
             <p>
               Nosso time é liderado por João Vitor Tipolt, um profissional com vasta experiência e profundo
               conhecimento das leis brasileiras, especialmente nas áreas em que atuamos. Com uma abordagem clara e
@@ -130,24 +135,30 @@
             <carroussel-component/>
           </div>
 
-          <div class="avatar">
-            <div class="mask mask-squircle">
-              <img
-                src="https://images.pexels.com/photos/4427543/pexels-photo-4427543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              />
+          <div class="flex flex-col text-center pb-5">
+            <div class="avatar">
+              <div class="mask mask-squircle">
+                <img
+                  src="https://images.pexels.com/photos/4427543/pexels-photo-4427543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  class="max-w-[100vw]"
+                />
+              </div>
             </div>
+            <small class="font-playfair">João Vitor Tipolt, OAB/PR 123.313</small>
           </div>
         </div>
       </div>
     </section>
 
-<!--    -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
 
-    <section class="min-h-[80vh]">
-      <div class="w-10/12 flex flex-col items-center justify-evenly pt-10 mx-auto text-base-content">
-        <div class="flex items-center justify-evenly flex-wrap my-10 w-full">
+    <section
+      id="why"
+      class="md:min-h-[80vh] xl:min-h-[50vh] px-5"
+    >
+      <div class="w-full md:w-10/12 flex flex-col items-center justify-evenly pt-10 mx-auto text-base-content">
+        <div class="flex md:flex-row items-center justify-evenly flex-wrap my-10 w-full">
 
-          <div class="w-1/3">
+          <div class="lg:w-1/3 text-justify">
             <h2 class="text-4xl my-5">
               Por que escolher<br/>
               <span class="font-playfair">João Tipolt </span>
@@ -163,6 +174,9 @@
             <p class="leading-relaxed">
               Venha nos conhecer e descubra como podemos ajudar você a encontrar soluções jurídicas assertivas e eficazes.
             </p>
+            <div class="my-5">
+              <whatsapp-button text="Converse agora!"/>
+            </div>
           </div>
           <div class="w-auto">
             <div class="avatar">
@@ -177,45 +191,51 @@
       </div>
     </section>
 
-    <!--    -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
-
-    <section class="min-h-[40vh] bg-neutral text-secondary-content">
+    <section
+      id="questions"
+      class="md:min-h-[40vh] px-5 bg-neutral text-secondary-content"
+    >
       <div class="w-10/12 flex flex-col items-center justify-evenly pt-10 mx-auto">
         <h2 class="text-5xl">
           Perguntas Frequentes
         </h2>
 
-        <div class="flex justify-center items-center flex-wrap my-10 w-full">
+        <div class="flex flex-col-reverse md:flex-row justify-center items-center flex-wrap my-10 w-full">
 
-          <div class="w-1/2">
+          <div class="md:w-1/2 hidden lg:block">
             <img
               src="@assets/images/ilustrations/question.png"
               alt="imagem de uma mulher em frente a uma parede branca pensando"
               class="w-full"
             />
           </div>
-          <div class="w-1/2">
+          <div class="lg:w-1/2 w-full">
             <accordion-component :items="frequentlyAskedQuestions"/>
+            <div class="lg:my-10">
+              <p class="my-5">Ainda tem dúvidas?</p>
+              <whatsapp-button text="Converse agora mesmo!"/>
+            </div>
           </div>
 
         </div>
       </div>
     </section>
 
-    <!--    -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
-
-    <section class="min-h-[40vh] bg-primary text-primary-content">
+    <section
+      id="contact"
+      class="lg:min-h-[20vh] bg-primary text-primary-content"
+    >
       <div class="w-10/12 flex flex-col items-center justify-evenly pt-10 mx-auto">
 
         <div class="flex items-center justify-center flex-wrap gap-5 my-10 w-full">
 
-          <div class="w-auto">
+          <div class="">
             <h2 class="text-5xl">
               Entre em contato!
             </h2>
             <p>Clicando no botão verde para o WhatsApp, o atendimento é imediato</p>
           </div>
-          <div class="w-1/3">
+          <div class="">
             <ul class="p-5">
               <li class="flex gap-5 my-3">
                 <span class="text-secondary">
@@ -240,11 +260,9 @@
               </li>
             </ul>
           </div>
-
         </div>
       </div>
     </section>
-
   </div>
 </template>
 
@@ -253,6 +271,7 @@
 import CarrousselComponent from '@/components/carroussel/CarrousselComponent.vue'
 import AccordionComponent from '@/components/AccordionComponent.vue'
 import { ref } from 'vue'
+import WhatsappButton from '@/components/WhatsappButton.vue'
 
 const frequentlyAskedQuestions = ref([
   {

@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer bg-base-100 text-base-content p-10 flex justify-evenly">
+  <footer class="footer bg-base-100 text-base-content p-10 flex flex-col lg:flex-row justify-evenly">
     <div class="flex items-center">
       <img
         src="@assets/images/logo-white.png"
