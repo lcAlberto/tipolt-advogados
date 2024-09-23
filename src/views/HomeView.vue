@@ -42,71 +42,15 @@
               Civil e Agro.</span>
             </p>
 
-            <div class="flex items-center justify-center gap-10 flex-wrap my-10 px-5 md:px-0">
-
-<!--              CARD1-->
-              <div class="card bg-base-100 text-base-content lg:h-96 xl:h-80 lg:w-1/3 md:pb-10 shadow-2xl">
-                <div class="card-body flex md:flex-col justify-evenly items-center my-auto text-center md:p-5 p-2">
-                  <button
-                    type="button"
-                    class="badge badge-primary rounded-md py-10 px-5 cursor-default text-2xl my-5"
-                  >
-                    <font-awesome-icon :icon="['fas', 'people-group']" size="2xl" />
-                  </button>
-                  <h5 class="card-title">Direito Civil</h5>
-                  <p class="leading-relaxed text-start">
-                    Resolvemos disputas contratuais, questões de herança e danos morais.
-                    Soluções eficazes para questões contratuais, indenizações, e disputas familiares
-                  </p>
-                </div>
-              </div>
-              <!--              CARD2-->
-              <div class="card bg-base-100 text-base-content lg:h-96 xl:h-80 lg:w-1/3 md:pb-10 shadow-2xl">
-                <div class="card-body flex md:flex-col justify-evenly items-center my-auto text-center md:p-5 p-2">
-                  <button
-                    type="button"
-                    class="badge badge-primary rounded-md py-10 px-5 cursor-default text-2xl my-5"
-                  >
-                    <font-awesome-icon :icon="['fas', 'hammer']"  size="2xl"/>
-                  </button>
-                  <h5 class="card-title">Direito Trabalhista</h5>
-                  <p class="leading-relaxed text-start">
-                    Defendemos seus direitos trabalhistas, seja como empregador ou empregado, em casos de demissão, assédio
-                    no trabalho e questões de horas extras
-                  </p>
-                </div>
-              </div>
-              <!--              CARD3-->
-              <div class="card bg-base-100 text-base-content lg:h-96 xl:h-80 lg:w-1/3 md:pb-10 shadow-2xl">
-                <div class="card-body flex md:flex-col justify-evenly items-center my-auto text-center md:p-5 p-2">
-                  <button
-                    type="button"
-                    class="badge badge-primary rounded-md py-10 px-5 cursor-default text-2xl my-5"
-                  >
-                    <font-awesome-icon :icon="['fas', 'wheat-awn']" size="2xl" />
-                  </button>
-                  <h5 class="card-title">Direito Agrário</h5>
-                  <p class="leading-relaxed text-start">
-                    Protegemos o patrimônio rural e auxiliamos em questões legais relacionadas à terra.
-                    Assessoramos contratos agrários, regularização fundiária e questões ambientais
-                  </p>
-                </div>
-              </div>
-              <!--              CARD4-->
-              <div class="card bg-base-100 text-base-content lg:h-96 xl:h-80 lg:w-1/3 md:pb-10 shadow-2xl">
-                <div class="card-body flex md:flex-col justify-evenly items-center my-auto text-center md:p-5 p-2">
-                  <button
-                    type="button"
-                    class="badge badge-primary rounded-md py-10 px-5 cursor-default text-2xl my-5"
-                  >
-                    <font-awesome-icon :icon="['fas', 'people-roof']" size="2xl" />
-                  </button>
-                  <h5 class="card-title">Direito Previdenciario</h5>
-                  <p class="leading-relaxed text-start">
-                    Acompanhamento completo em processos de aposentadoria, auxílio-doença, benefícios por incapacidade e revisões desses benefícios do INSS
-                  </p>
-                </div>
-              </div>
+            <div class="flex items-center justify-center gap-10 md:gap-5 lg:gap-8 xl:gap-10 flex-wrap my-10 px-5 md:px-0">
+              <feature-cards
+                v-for="(item, index) in featureCards"
+                :key="index"
+                :title="item.title"
+                :description="item.description"
+                :icon="item.icon"
+                :index="index"
+              />
             </div>
           </div>
         </div>
@@ -149,7 +93,6 @@
         </div>
       </div>
     </section>
-
 
     <section
       id="why"
@@ -272,6 +215,36 @@ import CarrousselComponent from '@/components/carroussel/CarrousselComponent.vue
 import AccordionComponent from '@/components/AccordionComponent.vue'
 import { ref } from 'vue'
 import WhatsappButton from '@/components/WhatsappButton.vue'
+import FeatureCards from '@/components/FeatureCards.vue'
+
+const featureCards = ref([
+  {
+    title: 'Civil ',
+    description: 'Resolvemos disputas contratuais, questões de herança e danos morais. Soluções eficazes para questões contratuais, indenizações, e disputas familiares',
+    icon: 'people-group'
+  },
+  {
+    title: 'Trabalhista',
+    description: 'Defendemos seus direitos trabalhistas, seja como empregador ou empregado, em casos de demissão, assédio no trabalho e questões de horas extras',
+    icon: 'hammer'
+  },
+  {
+    title: 'Agrário',
+    description: 'Protegemos o patrimônio rural e auxiliamos em questões legais relacionadas à terra. Assessoramos contratos agrários, regularização fundiária e questões ambientais',
+    icon: 'wheat-awn'
+  },
+  {
+    title: 'Previdenciário',
+    description: 'Acompanhamento completo em processos de aposentadoria, auxílio-doença, benefícios por incapacidade e revisões desses benefícios do INSS',
+    icon: 'people-roof'
+  },
+  {
+    title: 'Criminal',
+    description: 'Defendemos seus direitos em investigações criminais, processos judiciais e inquéritos policiais. Oferecemos uma defesa robusta em casos de crimes contra a pessoa, patrimônio, dignidade sexual, entre outros.',
+    icon: 'handcuffs'
+  },
+
+])
 
 const frequentlyAskedQuestions = ref([
   {
