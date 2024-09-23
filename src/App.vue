@@ -14,7 +14,7 @@
 <script setup lang="ts">
 import Navbar from '@/components/NavbarContent.vue'
 import Footer from '@/components/FooterComponent.vue'
-import ScroolToTopButton from '@/ScroolToTopButton.vue'
+import ScroolToTopButton from '@/components/ScroolToTopButton.vue'
 </script>
 
 <style scoped>
