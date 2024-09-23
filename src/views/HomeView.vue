@@ -63,9 +63,9 @@
     >
       <div class="w-full md:w-10/12 flex flex-col items-center justify-evenly pt-10 mx-auto text-secondary-content">
         <h2 class="text-5xl">Quem somos?</h2>
-        <div class="flex items-center justify-evenly gap-10 flex-wrap mt-5">
+        <div class="flex flex-col md:flex-row items-center justify-evenly gap-10 mt-5">
 
-          <div class="w-full lg:w-1/2 text-lg">
+          <div class="w-full md:w-1/2 text-lg">
             <p>
               Nosso time é liderado por João Vitor Tipolt, um profissional com vasta experiência e profundo
               conhecimento das leis brasileiras, especialmente nas áreas em que atuamos. Com uma abordagem clara e
@@ -83,12 +83,13 @@
             <div class="avatar">
               <div class="mask mask-squircle">
                 <img
-                  src="https://images.pexels.com/photos/4427543/pexels-photo-4427543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  class="max-w-[100vw]"
+                  src="@assets/images/ilustrations/jtipolt.webp"
+                  alt="joao tipolt"
+                  class="w-96 max-w-[50vw]"
                 />
               </div>
             </div>
-            <small class="font-playfair">João Vitor Tipolt, OAB/PR 123.313</small>
+            <small class="font-playfair text-sm">João Vitor Tipolt, OAB/PR 123.313</small>
           </div>
         </div>
       </div>
@@ -124,8 +125,9 @@
           <div class="w-auto">
             <div class="avatar">
                 <img
-                  src="https://images.pexels.com/photos/4427543/pexels-photo-4427543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  class="rounded-3xl"
+                  src="@assets/images/ilustrations/jtipolt.webp"
+                  alt="joao vitor tipolt"
+                  class="rounded-3xl w-96"
                 />
             </div>
           </div>
@@ -176,7 +178,7 @@
             <h2 class="text-5xl">
               Entre em contato!
             </h2>
-            <p>Clicando no botão verde para o WhatsApp, o atendimento é imediato</p>
+            <p>optando pelo atendimento via WhatsApp, o atendimento é imediato</p>
           </div>
           <div class="">
             <ul class="p-5">
@@ -197,6 +199,9 @@
                   <font-awesome-icon :icon="['fas', 'location-dot']" size="xl"/>
                 </span>
                 <span>Guarapuava - PR</span>
+              </li>
+              <li class="flex gap-5 my-3">
+                <whatsapp-button size="sm" contrast/>
               </li>
               <li class="flex gap-5 my-3">
                 Atendimento online em todo Brasil!
