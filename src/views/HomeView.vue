@@ -125,7 +125,7 @@
           <div class="w-auto">
             <div class="avatar">
                 <img
-                  src="@assets/images/ilustrations/jtipolt.webp"
+                  src="@assets/images/ilustrations/tipolt-3.webp"
                   alt="joao vitor tipolt"
                   class="rounded-3xl w-96"
                 />
