@@ -3,14 +3,14 @@
     <div
       v-for="(item, index) in props.items"
       :key="index"
-      :class="{ 'bg-secondary border border-base-100': open[0] == index }"
+      :class="{ 'bg-secondary border border-base-200': open[0] == index }"
       class="collapse collapse-arrow join-item border-white"
     >
       <input
         v-model="open"
         type="radio"
-        :name="`my-accordion`"
-        :value="`${index}`"
+        name="my-accordion"
+        :value="`${index || 0}`"
       />
       <div class="collapse-title text-xl font-medium">
         {{ item.title }}
