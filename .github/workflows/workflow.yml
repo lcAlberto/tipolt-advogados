@@ -18,7 +18,7 @@ jobs:
       - name: 🗑️ Remover pasta dist antiga
         run: rm -rf dist
       - name: 🌎 Agora sim! Deploy para Locaweb 🚀
-        uses: locaweb/ftp-deploy@v1
+        uses: locaweb/ftp-deploy@1.0.0
         with:
           host: ${{ secrets.LOCAWEB_HOST }}
           user: ${{ secrets.LOCAWEB_USER }}
