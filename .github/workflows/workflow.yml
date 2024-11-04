@@ -12,7 +12,7 @@ jobs:
       - name: FTP Deploy Locaweb
         uses: locaweb/ftp-deploy@1.0.0
         with:
-          host: ${{ secrets.HOST }}
-          user: ${{ secrets.USER }}
-          password: ${{ secrets.PASS }}
+          host: ${{ secrets.LOCAWEB_HOST }}
+          user: ${{ secrets.LOCAWEB_USER }}
+          password: ${{ secrets.LOCAWEB_PASSWORD }}
           localDir: "public_html"
