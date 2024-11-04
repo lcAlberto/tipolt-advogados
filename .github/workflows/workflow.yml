@@ -15,4 +15,4 @@ jobs:
           host: ${{ secrets.LOCAWEB_HOST }}
           user: ${{ secrets.LOCAWEB_USER }}
           password: ${{ secrets.LOCAWEB_PASSWORD }}
-          localDir: dist
+          localDir: ../../dist
