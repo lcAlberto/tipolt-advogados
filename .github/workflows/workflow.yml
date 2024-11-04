@@ -12,7 +12,7 @@ jobs:
       - name: 📁 Criar pasta temporária
         run: mkdir temp_deploy
       - name: 🗂️ Mover arquivos para a pasta temporária
-        run: mv dist/* temp_deploy/
+        run: mv dist /* temp_deploy/
       - name: 📝 Renomear pasta temporária para public_html
         run: mv temp_deploy public_html
       - name: 🗑️ Remover pasta dist antiga
