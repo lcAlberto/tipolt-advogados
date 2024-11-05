@@ -11,8 +11,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: 📁 Rename directory dist to public_html
         run: mv dist public_html
-#      - name: Listar arquivos no diretório raiz
-#        run: ls -la
+      - name: Listar arquivos no diretório raiz
+        run: ls -la
 #      - name: 📁 Criar pasta temporária
 #        run: mkdir temp_deploy
 #      - name: 🗂️ Mover arquivos para a pasta temporária
