@@ -9,9 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: 📁 Create temporary directory
-        run: mkdir public_html
-      - name: 📁 Move build artifacts to temporary directory
+      - name: 📁 Rename directory dist to public_html
         run: mv dist/* public_html/
 #      - name: Listar arquivos no diretório raiz
 #        run: ls -la
