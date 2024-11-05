@@ -10,9 +10,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: 📁 Create temporary directory
-        run: mkdir temp_deploy
+        run: mkdir public_html
       - name: 📁 Move build artifacts to temporary directory
-        run: mv dist/* temp_deploy/
+        run: mv dist/* public_html/
 #      - name: Listar arquivos no diretório raiz
 #        run: ls -la
 #      - name: 📁 Criar pasta temporária
