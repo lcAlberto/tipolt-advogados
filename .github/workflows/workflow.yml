@@ -9,19 +9,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-#      - name: 📁 Criar pasta temporária
-#        run: mkdir temp_deploy
-#      - name: 🗂️ Mover arquivos para a pasta temporária
-#        run: mv dist /* temp_deploy/
-#      - name: 📝 Renomear pasta temporária para public_html
-#        run: mv temp_deploy public_html
-#      - name: 🗑️ Remover pasta dist antiga
-#        run: rm -rf dist
+      - name: Listar arquivos no diretório raiz
+        run: ls -la
+      - name: 📁 Criar pasta temporária
+        run: mkdir temp_deploy
+      - name: 🗂️ Mover arquivos para a pasta temporária
+        run: mv dist /* temp_deploy/
+      - name: 📝 Renomear pasta temporária para public_html
+        run: mv temp_deploy public_html
+      - name: 🗑️ Remover pasta dist antiga
+        run: rm -rf dist
       - name: 🌎 Agora sim! Deploy para Locaweb 🚀
         uses: locaweb/ftp-deploy@1.0.0
         with:
           host: ${{ secrets.LOCAWEB_HOST }}
           user: ${{ secrets.LOCAWEB_USER }}
           password: ${{ secrets.LOCAWEB_PASSWORD }}
-          localDir: ./dist/
-          serverDir: ./public_html/
+          localDir: public_html
