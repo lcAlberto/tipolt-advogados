@@ -15,6 +15,7 @@
 import Navbar from '@/components/NavbarContent.vue'
 import Footer from '@/components/FooterComponent.vue'
 import ScroolToTopButton from '@/components/ScroolToTopButton.vue'
+console.log(import.meta.env.VITE_API_METRIC_ID)
 </script>
 
 <style scoped>
