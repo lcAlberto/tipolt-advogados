@@ -18,6 +18,6 @@ app.use(VueGtagPlugin, {
   config: { id: import.meta.env.VITE_API_METRIC_ID },
   pageTrackerScreenviewEnabled: true,
 });
-
+console.log(import.meta.env.VITE_API_METRIC_ID)
 
 app.mount('#app')
