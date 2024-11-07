@@ -15,7 +15,7 @@ app.use(createPinia())
 app.use(router)
 app.component('font-awesome-icon', FontAwesomeIcon)
 app.use(VueGtagPlugin, {
-  config: { id: import.meta.env.VITE_METRIC_ID },
+  config: { id: import.meta.env.VITE_API_METRIC_ID },
   pageTrackerScreenviewEnabled: true,
 });
 
